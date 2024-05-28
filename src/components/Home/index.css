@@ -1,0 +1,14 @@
+@media (min-height: 768px) {
+  .home-bg-container {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/home-lg-bg.png');
+    min-height: 100vh;
+    background-size: cover;
+  }
+}
+
+@media (max-height: 767px) {
+  .home-bg-container {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/home-sm-bg.png');
+    min-height: 100vh;
+  }
+}

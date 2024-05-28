@@ -1,0 +1,14 @@
+.company-logo {
+  height: 5rem;
+}
+.profile-bg-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/profile-bg.png');
+  background-size: cover;
+}
+.profile-name {
+  color: #6366f1;
+}
+
+.profile-card {
+  min-height: 13rem;
+}
