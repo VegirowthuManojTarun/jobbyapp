@@ -6,6 +6,7 @@ import Header from '../Header'
 import Filters from '../Filters'
 import ProfileCard from '../ProfileCard'
 import JobCard from '../JobCard'
+import Footer from '../Footer'
 import './index.css'
 
 const apiStatusConstants = {
@@ -210,6 +211,7 @@ class Jobs extends Component {
             </div>
           </div>
         </div>
+        <Footer />
       </>
     )
   }

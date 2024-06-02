@@ -2,6 +2,7 @@ import {Component} from 'react'
 import Cookies from 'js-cookie'
 import Loader from 'react-loader-spinner'
 import Header from '../Header'
+import Footer from '../Footer'
 import JobItemDetailsCard from '../JobItemDetailsCard'
 import SimilarJobCard from '../SimilarJobCard'
 import './index.css'
@@ -76,7 +77,7 @@ class JobItemDetails extends Component {
       <>
         <JobItemDetailsCard jobDetails={jobDetails} />
         <h1 className="fs-3 fw-bold text-light mt-4 mb-5">Similar Jobs</h1>
-        <ul className="list-unstyled container-fluid row px-0">
+        <ul className="list-unstyled container-fluid row">
           {similarJobs.map(job => (
             <SimilarJobCard job={job} key={job.id} />
           ))}
@@ -135,13 +136,14 @@ class JobItemDetails extends Component {
     return (
       <>
         <Header />
-        <div className="container-fluid jobs-bg-container bg-black p-5">
+        <div className="container-fluid jobs-bg-container bg-black p-3">
           <div className="row">
             <div className="col-12">
               <div>{this.renderJobsSection()}</div>
             </div>
           </div>
         </div>
+        <Footer />
       </>
     )
   }
